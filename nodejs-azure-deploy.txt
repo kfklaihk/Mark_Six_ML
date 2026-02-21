@@ -1,0 +1,12 @@
+WebApplication120190126091827ResourceGroup
+
+WebApplication120190126091827Plan
+
+
+# Bash and Powershell
+az webapp create --resource-group WebApplication120190126091827ResourceGroup --plan WebApplication120190126091827Plan --name m6-analyze
+
+# Bash and Powershell
+az webapp config appsettings set --resource-group WebApplication120190126091827ResourceGroup --name m6-analyze --settings WEBSITE_NODE_DEFAULT_VERSION=10.14.1
+
+http://m6-analyze.azurewebsites.net
